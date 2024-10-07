@@ -20,8 +20,28 @@ AprilTags are a type of fiducial marker used in computer vision applications for
 
 ## Project Overview
 <p align="justify">
-This project provides code for generating these fiducial markers of the type 16h5, 25h9 and 36h11. The code is written in python and  has a tool folder containing a python file that can convert hex codes to binary lists which could be used to produce other types by appropriatly adjusting the any of the template provided (AprilTag_Generator(tag16h5)/ AprilTag_Generator(tag25h9)/ AprilTag_Generator(tag36h11)). A .txt file is provided along with AprilTag_Generator(tag36h11).py for applications involving creating a collage of 5x7 grid of april tags (type:36h11).
+This project provides code for generating these fiducial markers of the type 16h5, 25h9 and 36h11. The code is written in python and  has a tool folder containing a python file that can convert hex codes to binary lists which could be used to produce other types by appropriatly adjusting the any of the template provided (AprilTag_Generator(tag16h5)/ AprilTag_Generator(tag25h9)/ AprilTag_Generator(tag36h11)). A .txt file is provided along with AprilTag_Generator(tag36h11).py for applications involving creating a collage of 5x7 grid of april tags (type:36h11). The code offers a comprehensive solution to creating AprilTags from  scratch (without using any <u>AprilTag Libraries></u>). For those who need to just make a tag, the following code should work just fine:
 </p>
+
+```bash
+    $ pip install opencv-contrib-python
+    $ pip install numpy
+```
+
+```python
+   import cv2
+   import numpy as np
+   aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_APRILTAG_36h11)
+   marker_id = 10  # Choose any ID from 0 to the number of markers in the dictionary
+   marker_size = 200  # The size of the marker in pixels
+   
+   marker_image = cv2.aruco.drawMarker(aruco_dict, marker_id, marker_size)
+   
+   # Display the marker using OpenCV
+   cv2.imshow('ArUco Marker', marker_image)
+   cv2.waitKey(0)
+   cv2.destroyAllWindows()
+```
 
 ## SETUP
 
