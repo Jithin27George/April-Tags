@@ -29,7 +29,7 @@ This project provides code for generating these fiducial markers of the type 16h
 
     ```bash
     $ cd [-->set the path to which you want the code to be downloaded to<--]
-    $ git clone https://github.com/Tinker-Twins/AprilTag.git
+    $ git clone https://github.com/Jithin27George/April-Tags.git
     ```
 2. Install required libraries to run the codes.
 
