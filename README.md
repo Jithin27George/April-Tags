@@ -20,7 +20,7 @@ AprilTags are a type of fiducial marker used in computer vision applications for
 
 ## Project Overview
 <p align="justify">
-This project provides code for generating these fiducial markers of the type 16h5, 25h9 and 36h11. The code is written in python and  has a tool folder containing a python file that can convert hex codes to binary lists which could be used to produce other types by appropriatly adjusting the any of the template provided (AprilTag_Generator(tag16h5)/AprilTag_Generator(tag25h9)/AprilTag_Generator(tag36h11)). A .txt file is provided along with AprilTag_Generator(tag36h11).py for applications involving creating a collage of 5x7 grid of april tags (type:36h11).
+This project provides code for generating these fiducial markers of the type 16h5, 25h9 and 36h11. The code is written in python and  has a tool folder containing a python file that can convert hex codes to binary lists which could be used to produce other types by appropriatly adjusting the any of the template provided (AprilTag_Generator(tag16h5)/ AprilTag_Generator(tag25h9)/ AprilTag_Generator(tag36h11)). A .txt file is provided along with AprilTag_Generator(tag36h11).py for applications involving creating a collage of 5x7 grid of april tags (type:36h11).
 </p>
 
 ## SETUP
@@ -37,9 +37,6 @@ This project provides code for generating these fiducial markers of the type 16h
     $ pip install Pillow
     $ pip install numpy
     ```
-
-
-Further development is ongoing.....
 
 ## Future Development
 
