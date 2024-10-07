@@ -3,12 +3,16 @@
 <p align="justify">
 AprilTags are a type of fiducial marker used in computer vision applications for object detection and pose estimation. Similar to QR codes, they consist of a square black-and-white pattern designed to be robust and easily recognizable in different lighting conditions and angles. Each AprilTag contains a unique binary code, enabling individual identification.
 </p>
+
 ###Key Features:
+
 1. **Identification**: AprilTags can be identified uniquely from their encoded binary information, which makes them useful in distinguishing between multiple tags in a scene.
 2. **Pose Estimation**: One of the primary uses of AprilTags is to determine the 6-DOF (Degrees of Freedom) pose of an object relative to a camera, including its position (x, y, z) and orientation (roll, pitch, yaw).
 3. **Robustness**: AprilTags are designed to be detected even under challenging conditions such as partial occlusion, varied lighting, or at different angles.
 4. **Low Latency Detection**: AprilTag detection algorithms are efficient and allow for real-time tracking in robotics and augmented reality (AR) applications.
+   
 ###Applications:
+
 1. **Robotics**: AprilTags are often used in autonomous systems to help robots identify objects, track positions, and localize themselves within an environment.
 2. **Augmented Reality (AR)**: They serve as visual markers for overlaying digital content in AR applications.
 3. **Drone Navigation**: AprilTags assist in navigation tasks where drones use the tags for precise location and landing.
